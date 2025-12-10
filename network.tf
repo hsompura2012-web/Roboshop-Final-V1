@@ -1,6 +1,6 @@
 resource "aws_security_group" "main" {
   for_each = var.component
-  name        = "${each.key}-${var.env}}"
+  name        = "${each.key}-${var.env}"
   description = "${each.key}-${var.env}"
 
   dynamic "ingress" {
