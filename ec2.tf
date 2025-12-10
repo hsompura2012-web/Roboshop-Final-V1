@@ -1,7 +1,7 @@
 resource "aws_instance" "instance_launch" {
   for_each = var.component
   ami           = var.ami
-  instance_type = var.instance_type
+  instance_type = each.value["instance_type"]
   vpc_security_group_ids = [aws_security_group.main[each.key].id]
 
   tags = {

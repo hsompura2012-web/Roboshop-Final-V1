@@ -8,7 +8,7 @@ resource "aws_security_group" "main" {
     content {
       from_port = ingress.value
       to_port = ingress.value
-      cidr_ipv4   = ["0.0.0.0/0"]
+      cidr_blocks   = ["0.0.0.0/0"]
       protocol = "tcp"
       description = ingress.key
     }
@@ -17,8 +17,8 @@ resource "aws_security_group" "main" {
    egress {
       from_port = 0
       to_port = 0
-      cidr_ipv4   = "0.0.0.0/0"
-      ip_protocol = "-1"
+      cidr_blocks   = "0.0.0.0/0"
+      protocol = "-1"
 
   }
 
