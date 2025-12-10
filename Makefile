@@ -1,3 +1,5 @@
+
+
 dev-apply:
     rm -f .terraform/terraform.tfstate
     terraform init -backend-config=env-dev/state.tfvars
