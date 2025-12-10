@@ -7,8 +7,7 @@ variable "instance_type" {
   default = "t3.micro"
 }
 
-variable "vpc_security_group_ids"{
- }
+
 
 variable "zone_id" {
   default =  "Z055196614WSVQYU4VYMA"
