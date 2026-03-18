@@ -1,5 +1,5 @@
 env="prod"
-ami = "ami-09c813fb71547fc4f"
+ami = "ami-0220d79f3f480ecf5"
 #
 zone_id =  "Z055196614WSVQYU4VYMA"
 component = {
