@@ -1,7 +1,7 @@
 env="dev"
 ami = "ami-0220d79f3f480ecf5"
 #
-zone_id =  "Z055196614WSVQYU4VYMA"
+zone_id =  "Z07818291SQAE6AN08Y8L"
 component = {
   frontend = {
     port = { ssh= 22 , app = 8080 }
